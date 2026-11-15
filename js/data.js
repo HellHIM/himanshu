@@ -29,7 +29,7 @@ window.PORTFOLIO = {
 
   /* ---------- 2. PLAYER (YOU) ---------- */
   player: {
-    name: "Alchemist",
+    name: "Himanshu",
     handle: "Hell,HIM",                       // Short brand / username shown in the top bar
     avatar: "assets/images/himanshu.png.jpeg",
     classTitles: [                             // Typed one after another in the hero
