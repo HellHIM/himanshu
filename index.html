@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="synthwave">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Player One — Portfolio</title>
   <meta name="description" content="B.Tech student portfolio" />
   <meta name="theme-color" content="#07051a" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>" />
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👾</text></svg>" />
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600&family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@300;400;500;600&family=Press+Start+2P&display=swap"
+    rel="stylesheet" />
 
   <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
   <!-- ============ BOOT / PRESS START SCREEN ============ -->
@@ -51,7 +56,8 @@
       </div>
       <button class="tool-btn" id="btnSound" aria-label="Toggle sound" title="Sound">🔇</button>
       <button class="tool-btn" id="btnCrt" aria-label="Toggle CRT effect" title="CRT mode">📺</button>
-      <button class="tool-btn kbd" id="btnPalette" aria-label="Open command menu" title="Command menu (Ctrl + K)">⌘K</button>
+      <button class="tool-btn kbd" id="btnPalette" aria-label="Open command menu"
+        title="Command menu (Ctrl + K)">⌘K</button>
     </div>
   </header>
 
@@ -120,7 +126,9 @@
     </section>
 
     <!-- Arcade ticker -->
-    <div class="ticker" aria-hidden="true"><div class="ticker-track" id="ticker"></div></div>
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track" id="ticker"></div>
+    </div>
 
     <!-- ============ PLAYER STATS ============ -->
     <section class="zone stats-zone" id="stats" data-zone="stats">
@@ -178,7 +186,9 @@
       <div class="map-scroll" id="mapScroll">
         <div class="map-track" id="mapTrack"></div>
       </div>
-      <div class="container"><p class="map-hint dim">← drag / scroll to explore the map →</p></div>
+      <div class="container">
+        <p class="map-hint dim">← drag / scroll to explore the map →</p>
+      </div>
     </section>
 
     <!-- ============ ACHIEVEMENTS ============ -->
@@ -219,8 +229,10 @@
             <div class="term-bar"><i></i><i></i><i></i><span>party_invite.sh</span></div>
             <div class="term-body">
               <p class="term-line dim">// fill the fields and hit ENTER to send a party invite</p>
-              <label class="term-field"><span>$ name:</span><input name="name" required autocomplete="name" placeholder="Player Two" /></label>
-              <label class="term-field"><span>$ email:</span><input name="email" type="email" required autocomplete="email" placeholder="you@domain.com" /></label>
+              <label class="term-field"><span>$ name:</span><input name="name" required autocomplete="name"
+                  placeholder="Player Two" /></label>
+              <label class="term-field"><span>$ email:</span><input name="email" type="email" required
+                  autocomplete="email" placeholder="you@domain.com" /></label>
               <label class="term-field"><span>$ quest:</span>
                 <select name="subject">
                   <option>Internship opportunity</option>
@@ -229,7 +241,8 @@
                   <option>Just saying hi 👋</option>
                 </select>
               </label>
-              <label class="term-field col"><span>$ message:</span><textarea name="message" rows="4" required placeholder="Type your message…"></textarea></label>
+              <label class="term-field col"><span>$ message:</span><textarea name="message" rows="4" required
+                  placeholder="Type your message…"></textarea></label>
               <div class="term-actions">
                 <button class="btn btn-primary" type="submit" data-sfx>⏎ SEND INVITE</button>
                 <span class="term-out" id="termOut"></span>
@@ -245,9 +258,11 @@
   <footer class="footer">
     <div class="container">
       <div class="credits">THANKS FOR PLAYING</div>
-      <p class="footer-zones">Zones explored: <b id="zonesFound">0</b> / <b id="zonesTotal">0</b> <span id="zonesMsg"></span></p>
+      <p class="footer-zones">Zones explored: <b id="zonesFound">0</b> / <b id="zonesTotal">0</b> <span
+          id="zonesMsg"></span></p>
       <a href="#profile" class="btn btn-ghost respawn" data-sfx>↑ Respawn at top</a>
-      <p class="footer-note dim"><span id="footNote"></span><br />© <span id="footYear"></span> <span id="footName"></span> · Psst… try the Konami code ↑↑↓↓←→←→BA</p>
+      <p class="footer-note dim"><span id="footNote"></span><br />© <span id="footYear"></span> <span
+          id="footName"></span> · Psst… try the Konami code ↑↑↓↓←→←→BA</p>
     </div>
   </footer>
 
@@ -264,7 +279,8 @@
   <div class="palette" id="palette" hidden>
     <div class="modal-backdrop" data-pclose></div>
     <div class="palette-box">
-      <div class="palette-input"><span>›</span><input id="paletteInput" placeholder="Type a command or zone…" autocomplete="off" /></div>
+      <div class="palette-input"><span>›</span><input id="paletteInput" placeholder="Type a command or zone…"
+          autocomplete="off" /></div>
       <ul class="palette-list" id="paletteList"></ul>
       <div class="palette-foot"><span>↑↓ navigate</span><span>⏎ select</span><span>esc close</span></div>
     </div>
@@ -277,4 +293,5 @@
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
